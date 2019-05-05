@@ -89,7 +89,7 @@ export var MarkerDrag = Handler.extend({
 			movement = map._limitOffset(movement, map.options.maxBounds);
 
 			if (movement.x || movement.y) {
-			 	map.panBy(movement, {animate: false}));
+			 	map.panBy(movement, {animate: false});
 				
 				this._draggable._newPos._add(movement);
 				this._draggable._startPos._add(movement);
